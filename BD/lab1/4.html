@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body>
+	<input type="text" id="direction" onchange="print_stud()">
+	<ol id="lst"></ol>
+</body>
+<script>
+	function print_stud() {
+		let direction = document.getElementById("direction").value
+		let lst = document.getElementById("lst");
+		let count = lst.childElementCount
+		for (let i = 0; i < count; i++) {
+			lst.removeChild(lst.firstChild);
+		}
+		console.clear();
+		for (let i = 0; i < students.length; i++) {
+			if (students[i][3] == direction) {
+				let row = document.createElement("li");
+				row.textContent = students[i];
+				row.textContent.split(",").join(", ");
+				lst.appendChild(row);
+			} else {
+				console.log(students[i]);
+			}
+		}
+	}
+
+	let students = [["Максим", "Воробьев", 1, 1],
+	["Петр", "Иванов", 1, 2],
+	["Вячеслав", "Громов", 2, 3],
+	["Алина", "Сергеева", 3, 2],
+	["Дмитрий", "Березов", 3, 2],
+	["Григорий", "Филипов", 3, 1]];
+</script>
+
+</html>

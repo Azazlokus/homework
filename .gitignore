@@ -1,0 +1,6 @@
+*.exe
+*.o
+token.txt
+*.class
+.vscode
+__pycache__/
