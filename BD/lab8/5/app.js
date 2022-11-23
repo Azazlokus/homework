@@ -14,7 +14,6 @@ http.createServer(async function (request, response) {
 		response.writeHead(200, { "Content-Type": "text/html; charset=utf8" });
 		response.end(index);
 	}
-
 	else if (url.endsWith(".js")) {
 		const script = fs.readFileSync("." + url);
 		response.writeHead(200, { "Content-Type": "text/javascript; charset=utf8" });

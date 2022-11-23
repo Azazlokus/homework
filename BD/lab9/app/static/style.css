@@ -1,0 +1,48 @@
+span {
+	white-space: pre;
+}
+
+button {
+	margin: 0px 10px;
+}
+
+.input_info {
+	display: flex;
+	margin-top: 10px;
+}
+
+#info {
+	width: 80%;
+}
+
+#info, #info .item div {
+	display: flex;
+	flex-direction: column;
+}
+
+.item {
+	display: flex;
+	margin: 15px 0px;
+}
+
+.controls{
+	margin-left: auto;
+}
+
+.controls button {
+	margin: auto;
+}
+
+.add_info {
+	display: flex;
+	width: 300px;
+	margin: 15px 0px;
+}
+
+.add_info input {
+	margin-left: auto;
+}
+
+.add_info label{
+	margin-left: auto;
+}
