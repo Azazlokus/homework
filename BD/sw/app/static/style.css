@@ -1,0 +1,174 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	background: rgb(240, 239, 237);
+}
+
+.wrap-content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.title {
+	font-size: 32px;
+	width: auto;
+	height: 40px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+.collections-list{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.collection-btn {
+	border: 1px solid gray;
+	background: rgba(169, 223, 248, 0.397);
+	font-size: 25px;
+	width: 50%;
+	height: 50px;
+	margin: 10px auto;
+	cursor: pointer;
+}
+
+.actions {
+	margin: auto;
+}
+
+.actions button {
+	width: 200px;
+	height: 30px;
+	border: none;
+	font-size: 17px;
+	cursor: pointer;
+	border-radius: 10px;
+	color: white;
+	transition: all 0.5s ease-in-out;
+}
+
+.documents {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
+.documents span {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.documents li {
+	font-size: 21px;
+	list-style: none;
+	
+}
+
+.documents>ul {
+	margin-top: 20px;
+}
+
+.obj-key {
+	display: inline-block;
+	font-weight: 700;
+	text-align: center;
+	width: 150px;
+	font-style: italic;
+}
+
+.obj-title {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+#back-btn {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	border: none;
+	background-color: rgb(0, 148, 148);
+	width: 50px;
+	border-radius: 10px;
+	color: white;
+	height: 30px;
+	cursor: pointer;
+}
+
+.change-content>ul{
+	margin-top: 20px;
+}
+
+textarea {
+	resize: vertical;
+	margin: auto;
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+#text-add {
+	width: 40%;
+	height: 400px;
+}
+
+#text-update{
+	height: 200px;
+	width: 50%;
+}
+
+#submit-btn {
+	width: 110px;
+	height: 35px;
+	border-radius: 10px;
+	font-size: 20px;
+	margin: auto;
+	margin-top: 20px;
+	background-color: rgb(173, 255, 67);
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+
+.red_btn{
+	background-color: rgb(255, 103, 103);
+}
+
+.red_btn:hover {
+	box-shadow: 0px 2px 25px -3px rgb(255, 103, 103);
+}
+
+.green_btn {
+	background-color: rgb(105, 255, 105);
+}
+
+.green_btn:hover {
+	box-shadow: 0px 2px 25px -3px rgb(105, 255, 105);
+}
+
+.blue_btn {
+	background-color: rgb(83, 83, 255);
+}
+
+.blue_btn:hover {
+	box-shadow: 0px 2px 25px -3px rgb(83, 83, 255);
+}
+
+#status {
+	height: 30px;
+	color:rgb(255, 103, 103);
+	margin: auto;
+	font-size: 21px;
+}
+
+@font-face {
+	font-family: 'Roboto Condensed';
+	src: url("RobotoCondensed-Light.ttf");
+}
+
