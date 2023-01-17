@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body>
+	<button onclick="student.print_info()">Вывести информацию</button>
+	<input id="year" onchange="action()">
+	<p id="info"></p>
+</body>
+<script>
+	let student = {
+		lastName: "Сергей",
+		firstName: "Белозеров",
+		middleName: "Вадимович",
+		birthday: "2008",
+		class: 7,
+		hobby: ["Волейбол", "Видеоигры"]
+	}
+
+	student.reg_place = {
+		country: "Россия",
+		city: "Кемерово",
+		num_home: 12,
+		num_apartment: 5
+	}
+
+	student.live_place = {
+		country: "Россия",
+		city: "Кемерово",
+		num_home: 12,
+		num_apartment: 5
+	}
+
+	let info = document.getElementById("info");
+	student.print_info = function () {
+		info.innerHTML = ``;
+		for (var key in this) {
+			if (this[key] == "[object Object]") {
+				info.innerHTML = info.innerHTML + key + `: ` + Object.values(this[key]) + `<br>`;
+			} else if (typeof (this[key]) != "function") {
+				info.innerHTML = info.innerHTML + key + `: ` + this[key] + `<br>`;
+			}
+		}
+	}
+
+	student.add_birthday = function (year) {
+		info.innerHTML = "";
+		let birthday = Number(this.birthday);
+		if (year <= birthday && year >= (birthday - 200)) {
+			this.birthday = year;
+		} else {
+			info.innerHTML = "Неверный год";
+		}
+	}
+
+	function action(){
+		let year = document.getElementById("year").value;
+		student.add_birthday(year);
+	}
+</script>
+
+</html>

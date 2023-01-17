@@ -3,6 +3,6 @@
 token.txt
 *.class
 .vscode
-__pycache__/
-node_modules
-*.json
+node_modules/
+package.json
+package-lock.json

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body>
+	<input type="text" id="myinput" onchange="action()">
+	<p id="output">Вывод: </p>
+</body>
+<script>
+	function fact(x) {
+		let rez = 1;
+		for (let i = 1; i <= x; i++) {
+			rez *= i;
+		}
+		return rez;
+	}
+
+	function mid(x) {
+		let sum = 0;
+		let count = 0
+		for (let i = 1; i <= x; i++) {
+			sum += i;
+			count++;
+		}
+		return sum / count;
+	}
+
+	function action() {
+		let num = document.getElementById("myinput").value;
+		let p = document.getElementById("output");
+		let rez;
+		if (num % 2 == 1) {
+			rez = mid(num);
+		} else {
+			rez = fact(num)
+		}
+		p.textContent = "Вывод: " + rez;
+	}
+</script>
+
+</html>

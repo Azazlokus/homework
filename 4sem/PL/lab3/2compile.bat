@@ -1,0 +1,2 @@
+javac --module-path .\Libs\javafx\lib --add-modules=javafx.controls,javafx.fxml --class-path ".\#2" .\#2\controller.java
+javac --module-path .\Libs\javafx\lib --add-modules=javafx.controls,javafx.fxml --class-path ".\#2" .\#2\Main.java

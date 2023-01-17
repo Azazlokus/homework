@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <children>
+      <TableView fx:id="DB_table" prefHeight="534.0" prefWidth="600.0">
+         <columns>
+            <TableColumn fx:id="columnId" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="columnName" prefWidth="132.0" text="NAME" />
+            <TableColumn fx:id="columnArea" prefWidth="113.0" text="AREA(KM^2)" />
+         </columns></TableView>
+      <TextField fx:id="textQuery" layoutX="69.0" layoutY="549.0" prefHeight="25.0" prefWidth="344.0" />
+      <Button fx:id="btn_filter" layoutX="462.0" layoutY="549.0" mnemonicParsing="false" onAction="#filter" text="Filter" />
+   </children>
+</AnchorPane>
